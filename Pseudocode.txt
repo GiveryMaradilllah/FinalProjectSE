@@ -19,7 +19,7 @@ ELSE
   go to Saldo
   
 Saldo
-IF "jumlah_saldo" more than or equal "total_harga
+IF "jumlah_saldo" more than or equal "total_harga"
   print "makanan dikirm"
 ELSE
   print "transaksi tidak dapat dilakukan"
