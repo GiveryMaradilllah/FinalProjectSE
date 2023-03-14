@@ -1,0 +1,26 @@
+# Proses order makanan via online
+
+read "reestoran"
+read "makanan"
+read "makanan2"
+store "jumlah_saldo" with number 100000
+
+checkout makanan
+store "makanan" with number "20000"
+store "makanan" with number "15000"
+
+menghitung total harga
+store "total_harga" with "makanan" plus "makanan2"
+
+Pilih_metode_pembayaran
+IF "cash"
+  print "makanan dikirim"
+ELSE
+  go to Saldo
+  
+Saldo
+IF "jumlah_saldo" more than or equal "total_harga
+  print "makanan dikirm"
+ELSE
+  print "transaksi tidak dapat dilakukan"
+  go to Pilih_metode_pembayaran
